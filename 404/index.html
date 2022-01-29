@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="404, 夏晓宽的Blog">
-    <meta name="description" content="夏晓宽的Blog">
+    <meta name="keywords" content="404, Xiaokuan&#39;Blog">
+    <meta name="description" content="Xiaokuan&#39;Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>404 | 夏晓宽的Blog</title>
+    <title>404 | Xiaokuan&#39;Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -44,7 +44,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">夏晓宽的Blog</span>
+                    <span class="logo-span">Xiaokuan&#39;Blog</span>
                 </a>
             </div>
             
@@ -143,7 +143,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">夏晓宽的Blog</div>
+        <div class="logo-name">Xiaokuan&#39;Blog</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -307,39 +307,41 @@
 
     <style type="text/css">
     /* don't remove. */
-    .about-cover {
-        height: 90.2vh;
+    .page404-cover {
+        /* height: 75vh; */
+        height: 88vh;
+    }
+ 
+    #svgContainer {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
     }
 </style>
-<div class="bg-cover pd-header about-cover">
-    <div class="container">
-        <div class="row">
-            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-                <div class="brand">
-                    <div class="title center-align">
-                        404 Sorry 您找的页面不存在！
-                    </div>
-                    <div class="title center-align">
-                        试试右上角的<span style="color:blue;font-weight:bold">搜索</span>功能？
-                    </div>
-                    <div class="title center-align">
-                        <a href="/" target="_blank">返回首页</a>
-                    </div>
-                    <div class="description center-align">
-                        Oops～，我崩溃了！找不到你想要的页面 :(
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-    <script>
-        // 每天切换 banner 图.  Switch banner image every day.
-        var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+ 
+ 
+<script src=""></script>
+<script src=""></script>
+ 
+<div class="bg-cover pd-header page404-cover">
+    <div id="svgContainer"></div>
+ 
+    <script type="text/javascript">
+        var svgContainer = document.getElementById('svgContainer');
+        var animItem = bodymovin.loadAnimation({
+          wrapper: svgContainer,
+          animType: 'svg',
+          loop: true,
+          animationData: JSON.parse(animationData)
+        });
     </script>
+</div>
 
 
 
@@ -381,9 +383,9 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="330695641"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
